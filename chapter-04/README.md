@@ -1,12 +1,30 @@
-# Chapter 04 
+# Chapter 4 — Code
 
 
-## Layout
+## Structure
 
-- `chapter-04/java/Main.java` – single-file Java example (Flink Runner + KafkaIO)
-- `chapter-04/python/script.py` – Python example (ReadFromKafka + WriteToKafka)
-- `chapter-04/java-project/` – Maven skeleton with a `pom.xml`
-- `chapter-04/python-project/` – Python skeleton with `requirements.txt`
+- `chapter-04/java-project/` — Apache Beam Java examples (Maven)
+- `chapter-04/python-project/` — Apache Beam Python examples
 
-> Note: Some snippets in the chapter were presented without full surrounding boilerplate (e.g., class/method wrappers).
-> The files here include minimal, standard wrappers so they compile/run.
+## Java (Maven)
+
+From `chapter-04/java-project/`:
+
+```bash
+mvn -q -DskipTests package
+# Run a batch example
+mvn -q exec:java -Dexec.mainClass=com.example.chapter04.BatchWordCount
+```
+
+> Some examples (Kafka/Flink) require external infrastructure and runner-specific options; see class-level comments.
+
+## Python
+
+From `chapter-04/python-project/`:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
+pip install -r requirements.txt
+python script.py
+```

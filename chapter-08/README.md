@@ -1,18 +1,12 @@
-# Chapter 08
+# Apache Beam Examples - Chapter 08
 
-## Structure
+Extracted from **Chapter 8** and arranged into:
 
-```
-chapter-08/
-  java/
-    Main.java
-  python/
-    script.py
-  java-project/
-    src/main/java/com/beam/ch08/Snippets.java
-  python-project/
-    requirements.txt
-    pipeline.py
-  misc/
-    snippets.sh
-```
+- `chapter-08/java-project/` (Maven)
+- `chapter-08/python-project/` (with `requirements.txt`)
+
+This chapter covers:
+- Unit testing Beam pipelines (TestPipeline / PAssert)
+- Dead-letter handling via side outputs + metrics
+- Custom metrics (counters, distributions)
+- Dataflow options for performance & cost control

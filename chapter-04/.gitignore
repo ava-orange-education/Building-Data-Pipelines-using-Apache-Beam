@@ -1,7 +1,6 @@
-# Java
+# Java / Maven
 target/
 *.class
-*.jar
 *.log
 
 # Python
@@ -11,7 +10,7 @@ __pycache__/
 venv/
 .env
 
-# OS/editor
+# OS / IDE
 .DS_Store
 .idea/
 .vscode/
