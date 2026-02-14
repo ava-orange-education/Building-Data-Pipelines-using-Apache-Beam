@@ -1,5 +1,3 @@
-This file should contain the environment setup instructions provided in your document.
-
 ### Setting Up the Python Environment for Apache Beam 
 
 Create a virtual environment:
